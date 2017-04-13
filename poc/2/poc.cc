@@ -133,7 +133,7 @@ int main(int argc, TCHAR* argv[])
 	*(HANDLE*)((PUCHAR)pMappedAddress + 4) = hResource1;
 	*(DWORD*)((PUCHAR)pMappedAddress + 8) = 8;
 	*(DWORD*)((PUCHAR)pMappedAddress + 0xc) = sizeof(szBuff);
-	CopyMemory((PUCHAR)pMappedAddress + 0x10, pszBuf, sizeof(szBuff));
+	CopyMemory((PUCHAR)pMappedAddress + 0x10, szBuf, sizeof(szBuff));
 
 
 	//
